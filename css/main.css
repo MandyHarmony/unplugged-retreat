@@ -18,6 +18,7 @@ html {
 }
 
 
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -97,16 +98,17 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
-
+  color: #e2e3ed;
 }
 
 ul,
 ol {
   list-style-type: none;
-  text-transform: capitalize;
-  font-size: 1em;
-  color: white;
+}
 
+a {
+  color: #e2e3ed;
+  text-decoration: none;
 }
 
 h1 {
@@ -119,15 +121,15 @@ aside, p {
 }
 
 h2 {
-  color: #e2e3ed;
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.875em;
 }
 
 h3,
 h4 {
-  color: #e2e3ed;
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.125em;
   margin: 20px 0;
 }
@@ -136,13 +138,12 @@ p {
   font-size: .875em;
   line-height: 1.285;
 }
-
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -159,11 +160,11 @@ address {
 
 header,
 footer {
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #000;
 }
 
 header {
@@ -171,25 +172,65 @@ header {
 }
 
 header .content-wrapper {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.header-divider {
+  background: #3a3a3a; 
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
+  width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
 }
 
 header nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
+}
+
+header nav ul li {
+  font-size: 1.125em;
+}
+
+footer {
+  text-align: center;
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
 }
 
 footer .social-icons {
@@ -204,51 +245,24 @@ footer .social-icons p {
   align-items: center;
 }
 
-header figure {
-
-}
-
-.header-divider {
-  width: 100%;
-  height: 1px;
-  margin: 10px 0 20px 0;
-
-}
-
-footer {
-  flex-direction: column;
-}
-
-footer p {
-  margin: 0;
-
-}
-
-footer .content-wrapper {
-  width: 55%;
-  margin: 50px 0;
-}
-
-footer .contact {
-  margin-bottom: 50px;
+footer .copyright {
+  margin: 20px 0;
 }
 
 .footer-content {
   color: white;
 }
 
-footer .copyright {
-  margin: 20px 0;
-  color: white;
-
-}
-
-
 /* -------------- Mobile Styles - Homepage --------------------*/
 
 /* Hero Area */
 
 .hero-area {
+  background-image: url(../img/hero.unplugged.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px; 
+  background-color: #333;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -271,18 +285,13 @@ aside {
   flex-flow: row wrap;
 }
 
-aside .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+aside .form {
+  margin-top: 30px;
 }
 
 .form-description {
 }
 
-aside .form {
-  margin-top: 30px;
-}
 
 input[type=text] {
   box-sizing: border-box;
@@ -309,6 +318,10 @@ input[type=button] {
 /* Features */ 
 
 .features {
+  background-image: url('../img/features.img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -318,9 +331,9 @@ input[type=button] {
   margin-bottom: 60px;
 }
 
-.features p {
-  text-align: center;
-  margin: 0;
+.features article {
+  width: 63%;
+  margin: 30px 0;
 }
 
 .features .features-items {
@@ -330,9 +343,9 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.features article {
-  width: 63%;
-  margin: 30px 0;
+.features p {
+  text-align: center;
+  margin: 0;
 }
 
 
@@ -347,10 +360,10 @@ input[type=button] {
 /* Reviews */
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: #2a423a;
 }
 
 .reviews h2 {
@@ -367,6 +380,7 @@ input[type=button] {
 About Page 
 =======================================================================*/
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -374,6 +388,7 @@ About Page
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -535,7 +550,7 @@ header .content-wrapper {
 }
 
 header figure {
-  width: 30%;
+  width: 33%;
 }
 
 header nav {
@@ -565,7 +580,8 @@ header nav ul {
   flex-flow: row wrap;
  }
 
- aside .content-wrapper .form-description, aside .content-wrapper .form {
+ aside .content-wrapper .form-description, 
+ aside .content-wrapper .form {
   width: 40%;
   margin: 0;
  }
@@ -597,6 +613,7 @@ header nav ul {
   width: 85%;
 }
 
+.reviews article figure,
 .reviews article div {
   width: 49%;
 }
@@ -715,7 +732,7 @@ header {
 /* Hero */
   .hero-area h1 {
     font-size: 3.75em;
-    width: 60%;
+    width: 80%;
   }
 
 /* Aside */ 
