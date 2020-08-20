@@ -245,6 +245,15 @@ footer .social-icons p {
   align-items: center;
 }
 
+.social-icons i {
+  color: seagreen;
+  border-radius: ;
+  width: 40px;
+  height: 40px;
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 footer .copyright {
   margin: 20px 0;
 }
@@ -420,6 +429,15 @@ About Page
   left: 0; 
 }
 
+.social-icons i {
+  color: seagreen;
+  border-radius: ;
+  width: 40px;
+  height: 40px;
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 /* =======================================================================
 FAQ Page 
 =========================================================================*/
@@ -450,6 +468,16 @@ FAQ Page
 
 .faq-content h4 {
   line-height: 1.333;
+}
+
+.social-icons i {
+  color: seagreen;
+  border-radius: ;
+  width: 40px;
+  height: 40px;
+  font-size: 3.75em;
+  margin-bottom: 40px;
+  padding: 30px;
 }
 
 /* ==========================================================================
