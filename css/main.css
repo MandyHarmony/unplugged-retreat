@@ -216,6 +216,7 @@ header nav ul {
 
 header nav ul li {
   font-size: 1.125em;
+  margin-right: 10px;
 }
 
 footer {
